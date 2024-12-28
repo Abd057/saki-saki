@@ -1,0 +1,183 @@
+/* General styling for the entire page */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  
+  background-color: #f4f4f4; /* Optional background color */
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+   background-image: url('./images/go.jpg');
+   background-size: cover;
+   background-position: center;
+}
+
+/* Add animation to the .log class */
+/* Add animation to the .log class */
+@keyframes slideInFromRight {
+  0% {
+      opacity: 0;
+      transform: translateX(100%);
+  }
+  100% {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+
+.log {
+  position: absolute;
+  right: 500px;
+  top: 50%;
+  transform: translateY(-50%);
+  
+  width: 100%;
+  max-width: 400px;
+  background: transparent;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(50px);
+  box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.381);
+  text-align: center;
+
+  animation: slideInFromRight 1s ease-out; /* Apply the animation */
+}
+
+
+/* Styling for animated headline */
+.log h1 {
+  margin-bottom: 20px;
+  color: #990808;
+  font-size: 24px;
+  animation: textChange 5s infinite; /* Apply animation */
+}
+
+/* Keyframes for text animation */
+@keyframes textChange {
+  0% {
+      content: "Hello dear faculty!!";
+  }
+  50% {
+      content: "Log In to check what's going on";
+  }
+  100% {
+      content: "Hello dear faculty!!";
+  }
+}
+
+/* Support for pseudo-element animation */
+.log h1::after {
+  display: inline-block;
+  animation: changeText 5s infinite;
+  content: "Hello dear faculty!!"; /* Default text */
+}
+
+@keyframes changeText {
+  0% {
+      content: "Hello dear faculty!!";
+  }
+  50% {
+      content: "Log In to check what's going on";
+  }
+  100% {
+      content: "Hello dear faculty!!";
+  }
+}
+
+
+/* Input fields */
+.input1, .input2 {
+  width: 95%;
+  height: 100 px;
+  display: flex;
+  align-items: center;
+  margin: 10px 0 ;
+  margin-bottom: 15 px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 15 px;
+  color:#fff;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(40 px);
+  outline:none;
+}
+
+.input1 input, .input2 input {
+  border: none;
+  flex: 1;
+  outline: none;
+  font-size: 18px;
+  height: 25px; /* Increased height */
+  width: 100%;  /* Set width to 100% to fill the parent container */
+  padding: 10px;
+}
+
+.input1 svg, .input2 svg {
+  position:absolute;
+  
+  right:15 px;
+  transform: translate(1750%);
+  color: #666;
+  font-size: 20px;
+}
+
+/* Forgot password link */
+.forget {
+  margin: 10px 0;
+}
+
+.forget a {
+  text-decoration: none;
+  color: #007bff;
+  font-size: 16px;
+}
+.forget a:hover{
+  color:rgb(3, 2, 2);
+}
+
+/* Button styling */
+button {
+  width: 40%;
+  padding: 10px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Registration link */
+.regi {
+  margin-top: 15px;
+}
+
+.regi p {
+  margin: 5px 0;
+}
+
+.input1 input:hover, .input2 input:hover {
+  background-color: rgba(255, 255, 255, 1); /* Fully brighten the background */
+  border: 2px solid #1e90ff; /* Highlight with a deeper blue border */
+  box-shadow: 0px 0px 15px 3px rgba(30, 144, 255, 1); /* Stronger glow effect */
+  outline: none; /* Remove default outline */
+  
+}
+
+.regi a{
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}
+.regi a:hover{
+    color: #000;
+}

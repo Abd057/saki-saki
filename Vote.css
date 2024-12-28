@@ -1,0 +1,111 @@
+/* Basic styles for the association page */
+.association-page {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-image: url(./images/login1.jpeg);
+    
+    
+  }
+  .header {
+    
+    background-color: #311299;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px; /* Increased padding for more height */
+    height: 80px; /* Optional: Set a fixed heght if needed */
+  }
+  .logo{
+    background-image: url(./images/logo.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 65px;
+    height: 65px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: #136a28;
+    cursor: pointer;
+    margin: 20 px;
+  }
+  .events{
+    margin: 0;
+  font-size: 20px;
+  text-align: center;
+  flex: 1;
+  }
+  .header-links a{
+    color: #f9f9f9;
+    margin: 5 px
+  }
+  .association-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .association-header h2 {
+    font-size: 34px;
+    color: #b0f281;
+  }
+  
+  .meetings-list {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .meeting-card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .meeting-card h3 {
+    margin-top: 0;
+  }
+  
+  .meeting-card p {
+    margin: 10px 0;
+  }
+  
+  .vote-options {
+    margin-top: 15px;
+  }
+  
+  .vote-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  .vote-btn.attend {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .vote-btn.attend:hover {
+    background-color: #45a049;
+  }
+  
+  .vote-btn.not-attend {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  .vote-btn.not-attend:hover {
+    background-color: #e53935;
+  }
+  
+  .meeting-card p strong {
+    font-weight: bold;
+  }
+  

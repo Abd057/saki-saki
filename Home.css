@@ -1,0 +1,154 @@
+/* General Styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #e0e0e0;
+}
+
+.home-page {
+  display: flex;
+  flex-direction: column;
+  background-image: url('./images/go2.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Header */
+/* Updated Header */
+.header {
+  background-color: #311299;
+  color: rgb(151, 21, 21);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px; /* Increased padding for more height */
+  height: 80px; /* Optional: Set a fixed height if needed */
+}
+.logo{
+  background-image: url(./images/logo.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 65px;
+  height: 65px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: #136a28;
+  cursor: pointer;
+  margin: 20 px;
+}
+.events1{
+  margin: 0;
+font-size: 20px;
+text-align: center;
+flex: 1;
+}
+
+
+ .logo img {
+  height: 30px;
+}
+
+.header-links a {
+  color: white;
+  text-decoration: none;
+  margin: 15px;
+  
+  padding-right: 15 px;
+}
+
+.header-links a:hover {
+  text-decoration: underline;
+}
+
+/* Main Container */
+.main-container {
+  padding: 20px;
+}
+
+/* Options (Vertical Layout) */
+.options-container {
+  width: 40%;
+  display: flex;
+  flex-direction: column; /* Aligns the cards vertically */
+  gap: 15px; /* Space between cards */
+  margin-bottom: 20px;
+}
+
+.option-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.option-card:hover {
+  transform: scale(1.02);
+}
+
+.option-card h3 {
+  margin: 0 0 5px;
+  color: #136a28;
+}
+
+.option-card p {
+  margin: 0;
+  color: gray;
+}
+
+/* Announcements Section */
+.announcements {
+  width:75%;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.announcement-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.announcement-header h2 {
+  margin: 0;
+}
+
+.announcement-header a {
+  color: #136a28;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.announcement-header a:hover {
+  text-decoration: underline;
+}
+
+.announcement-card {
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.announcement-card h4 {
+  margin: 0 0 5px;
+  color: #136a28;
+}
+
+.announcement-card p {
+  margin: 0 0 10px;
+  color: gray;
+}
+
+.announcement-card span {
+  font-size: 0.9em;
+  color: #777;
+}
